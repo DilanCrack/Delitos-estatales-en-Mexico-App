@@ -1,0 +1,82 @@
+/* Fondo general */
+.stApp {
+    background-color: var(--bg-color) !important;
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--title-color) !important;
+}
+
+/* Texto general */
+p, label, span, div, .stMarkdown {
+    color: #40010D !important;  /* mismo dark que los títulos */
+}
+
+/* Selectboxes (el cuadro cerrado) */
+.stSelectbox > div[data-baseweb="select"] > div {
+    background-color: #d6b8bc !important;
+    color: #40010D !important;              /* texto dark */
+    border-radius: 8px;
+    border: 1px solid #4E342E !important;   /* borde café oscuro */
+}
+
+/* Botones */
+.stButton > button {
+    background-color: var(--accent-color) !important;
+    color: white !important;
+    border-radius: 8px;
+    border: none;
+    padding: 8px 16px;
+}
+
+/* Ocultar menú superior (hamburguesa y "Made with Streamlit") */
+.st-emotion-cache-1pbsqtx,
+.st-emotion-cache-1wbqy5l {
+    display: none !important;
+}
+
+/* MENSAJE PERSONALIZADO "Datos cargados correctamente" */
+.ok-msg {
+    color: #40010D;
+    font-weight: 600;
+    margin: 0.5rem 0 1.5rem 0;
+}
+
+/* MENÚ DESPLEGABLE de los select (lista de opciones) */
+
+/* Contenedor del popover (el cuadro que antes era negro) */
+div[data-baseweb="popover"] {
+    background-color: #d6c3c5 !important;  /* mismo fondo que tu app */
+    color: #40010D !important;
+}
+
+/* Listbox dentro del popover */
+div[data-baseweb="popover"] [role="listbox"] {
+    background-color: #d6c3c5 !important;
+    color: #40010D !important;
+}
+
+/* Opciones del menú */
+div[data-baseweb="popover"] [role="option"] {
+    background-color: #d6c3c5 !important;
+    color: #40010D !important;
+}
+
+/* Opción seleccionada y hover */
+div[data-baseweb="popover"] [role="option"][aria-selected="true"],
+div[data-baseweb="popover"] [role="option"]:hover {
+    background-color: #f4c6cc !important;  /* rosita claro al pasar el mouse */
+    color: #40010D !important;
+}
+
+div[data-testid="stMetric"] {
+    background-color: #d6b8bc !important;
+    border-radius: 14px;
+    padding: 0.1rem 0.1rem;      /* menos alto y menos ancho interno */
+    margin: 0.5rem 0 1rem 0;     /*  sin auto: quedan pegadas a la izquierda */
+    max-width: 190px;            /*  ancho máximo fijo, tarjeta más pequeña */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+
